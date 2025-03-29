@@ -228,15 +228,16 @@
 
 //static 
 
-// class Reserved{
+class Reserved{
 
-//     static square(num){
-//        console.log(`Square of ${num}:`,num * num)
-//     }
-//     static name="Doraemon"
+    static square(num){
+       console.log(`Square of ${num}:`,num * num)
+       console.log(`Square of ${num}:`,num + num)
+    }
+    static name="Doraemon"
 
-// }
-// Reserved.square(6);
-// console.log(Reserved.name)
+}
+Reserved.square(6);
+console.log(Reserved.name)
 
 
