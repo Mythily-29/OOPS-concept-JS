@@ -228,16 +228,54 @@
 
 //static 
 
-class Reserved{
+// class Reserved{
 
-    static square(num){
-       console.log(`Square of ${num}:`,num * num)
-       console.log(`Square of ${num}:`,num + num)
+//     static square(num){
+//        console.log(`Square of ${num}:`,num * num)
+//        console.log(`Square of ${num}:`,num + num)
+//     }
+//     static name="Doraemon"
+
+// }
+// Reserved.square(6);
+// console.log(Reserved.name)
+
+// class validation{
+//     static check(username,password){
+//         if(username.length >= 3 && password.length > 5){
+//             console.log('Valid')
+//         }
+//         else{
+//             throw new Error('Invalid')
+//         }
+//     }
+// }
+
+// validation.check('Anu','123455')
+
+//abstraction
+
+class abstact{
+
+    #temp;
+
+    getting(email){
+        this.#temp=email
     }
-    static name="Doraemon"
+
+    #check(){
+        this.#temp.includes('@') ? console.log('valid email') : console.log("Invalid email")
+    }
+
+    final(){
+        this.#check()
+    }
 
 }
-Reserved.square(6);
-console.log(Reserved.name)
+const show=new abstact();
+show.getting('anu.com')
+show.final()
+
+
 
 
